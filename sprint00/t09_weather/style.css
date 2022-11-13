@@ -1,0 +1,30 @@
+body {
+    padding: 20px;
+}
+div {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+p:first-child {
+    background-color: rgba(34, 118, 151, 0.774);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: auto;
+    padding-top: 4px;
+}
+p:last-child {
+    font-size: 2em;
+    font-family: "Lato Regular", sans-serif;
+    font-weight: 400;
+    margin: 1px;
+}
+.day-block {
+    width: 140px;
+    height: 240px;
+}
+.day-block:hover {
+    box-shadow: 0 0 10px 5px gray;
+}

@@ -1,0 +1,23 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    padding-left: 10px;
+}
+.input-button {
+    color: green;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 2em;
+}
+input {
+    width: 500px;
+    border: 2px solid rgb(56, 119, 236);
+    color: green;
+}
+button {
+    color: green;
+}
+input:hover, button:hover {
+    color: red;
+}

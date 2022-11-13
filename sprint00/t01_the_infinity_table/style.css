@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid rgb(240, 236, 236);
+    border-collapse: collapse;
+}
+caption {
+    text-align: left;
+    font-size: 37px;
+}
+img {
+    height: 120px;
+    width: 120px;
+    margin: 7px;
+    border-radius: 20px;
+}
+.img-height {
+    height: 140px;
+}
+th {
+    background-color: black;
+    color: white;
+}
+.orange {
+    background-color: rgb(235, 155, 8);
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: rgba(32, 32, 240, 0.863);
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: rgba(185, 10, 10, 0.932);
+}
+.purple {
+    background-color: rgba(92, 25, 155, 0.712);
+}

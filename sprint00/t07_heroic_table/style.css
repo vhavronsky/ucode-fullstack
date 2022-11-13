@@ -1,0 +1,47 @@
+body {
+    padding: 10px;
+}
+table {
+    width: 50%;
+    background: linear-gradient(to right, #6e0000, antiquewhite);
+    border: 4px solid black;
+    text-align: center;
+}
+
+thead {
+    color: #ffe369;
+    font-weight: bold;
+    background-color: rgba(110, 0, 0, 0.4);
+    border: 2px solid rgba(189, 195, 199, 0.05);
+}
+th {
+    padding: 10px;
+}
+tbody {
+    border: 2px solid rgba(189, 195, 199, 0.05);
+
+}
+.back-body {
+    padding: 5px 50px;
+    color: midnightblue;
+    background: antiquewhite;
+    border: 2px solid rgba(189, 195, 199, 0.05);
+}
+.back-body-red {
+    padding: 5px 50px;
+    color: white;
+    background: darkred;
+}
+td:first-child { 
+    font-weight: bold;
+    color: white;
+}
+.alternative-cells {
+    background-color: rgba(250, 236, 220, 0.1);
+}
+a:link {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+

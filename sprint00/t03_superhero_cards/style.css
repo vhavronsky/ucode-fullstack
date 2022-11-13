@@ -1,0 +1,119 @@
+body {
+    margin-top: 50px;
+}
+.captain-america-card {
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-weight: bold;
+    background: repeating-linear-gradient(to bottom, #4568DC, #B06AB3);
+    display: inline-block;
+    margin: 0 40px;
+}
+#captain-america {
+    height: 182px;
+    position: relative;
+    bottom: 42px;
+    left: 5px;
+}
+.iron-man-card {
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-weight: bold;
+    background: repeating-linear-gradient(to right, #e52d27, #b31217);
+    display: inline-block;
+    margin: 0 40px;
+}
+#iron-man {
+    height: 182px;
+    position: relative;
+    bottom: 42px;
+}
+.black-widow-card {
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-weight: bold;
+    background: repeating-linear-gradient(to right, #000, #61045F);
+    display: inline-block;
+    margin: 0 40px;
+}
+#black-widow {
+    height: 182px;
+    position: relative;
+    bottom: 42px;
+}
+.spider-man-card {
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-weight: bold;
+    background: repeating-linear-gradient(to bottom, #e52d27, #000);
+    display: inline-block;
+    margin: 0 40px;
+}
+#spider-man {
+    height: 182px;
+    position: relative;
+    /* bottom: 25px; */
+}
+.alias {
+    color: white;
+    /* position: relative; */
+    /* color: black; */
+    font-size: 12px;
+}
+.real_name {
+    color: rgba(255, 255, 255, 0.5);
+    /* color: gray; */
+    font-size: 9px;
+}
+.info-captain {
+    position: relative;
+    top: -190px;
+    left: 150px;
+}
+.real_name_captain {
+    position: relative;
+    top: -10px;
+    left: 35px;
+}
+
+.info-iron {
+    position: relative;
+    top: -190px;
+    left: 195px;
+}
+.real_name_iron {
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+.info-black {
+    position: relative;
+    top: -190px;
+    left: 170px;
+}
+.real_name_black {
+    position: relative;
+    top: -10px;
+    left: -8px;
+}
+
+.info-spider {
+    position: relative;
+    top: -190px;
+    left: 182px;
+}
+.real_name_spider {
+    position: relative;
+    top: -10px;
+    left: 12px;
+}
+

@@ -1,0 +1,43 @@
+form {
+    border: 2px solid gray;
+    padding: 20px;
+    font-size: 16px;
+    width: 1000px;
+}
+.inline {
+    display: inline-block;
+}
+label {
+    display: inline-block;
+}
+
+.about-the-superhero {
+    border: 2px solid gray;
+    margin-bottom: 7px;
+    padding-bottom: 25px;   
+    padding-left: 8px;
+}
+
+.powers {
+    border: 2px solid gray;
+    margin-bottom: 7px;
+    padding-bottom: 25px;   
+    padding-left: 8px;
+}
+.range {
+    color: gray;
+}
+
+.origin-of-powers {
+    border: 2px solid gray;
+    padding-left: 8px;
+    margin-bottom: 17px;
+    padding-bottom: 25px;   
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 15%
+
+}
