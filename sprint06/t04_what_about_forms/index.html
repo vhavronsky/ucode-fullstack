@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What about forms</title>
+    <style>
+        label {
+            font-size: 25px;
+        }
+        button {
+            font-size: 20px;
+        }
+        .message {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What Is the Name of Thor's Axe?</h1>
+
+    <form action="/" method="POST">
+        <input type="radio" id="first" name="first">
+        <label for="first">Vibranium</label>
+        <br>
+        <input type="radio" id="second" name="second">
+        <label for="second">Stormbreaker</label>
+        <br>
+        <input type="radio" id="third" name="third">
+        <label for="third">Jarnbjorn</label>
+        <br><br>
+        <button type="button">I made a choice!</button>
+    </form>
+    <br>
+    <div class="message"></div>
+
+    <script src="script.js"></script>
+    <script>
+        const inputs = document.querySelectorAll('input');
+        const btn = document.querySelector('button');
+        const message = document.querySelector('.message');
+
+        // only one radio input can be checked
+        inputs.forEach(input => {
+            input.addEventListener('click', () => {
+                inputs[0].checked = false;
+                inputs[1].checked = false;
+                inputs[2].checked = false;
+                input.checked = true;
+            });
+        });
+
+        btn.addEventListener('click', () => {
+            inputs.forEach(input => {
+                if (input.checked) {
+                    if (inputs[1].checked) {
+                        message.textContent = 'Absolutely right!';
+                    } else {
+                        message.textContent = 'Shame on you! Go and watch Avengers!';
+                    }
+                } 
+            })
+        })
+    </script>
+</body>
+</html> 

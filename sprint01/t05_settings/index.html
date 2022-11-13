@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t05 Settings">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Settings</h1>
+    <form action="#"></form>
+        <fieldset class="wrapper">
+                <fieldset class="in-wrapper">
+                    <p class="setting">Typeface</p>
+                    <br><br>
+                <!-- CHOOSER -->
+                    <div class="custom-select" style="display: inline-block;">
+                        <select>
+                            <option value="Acunim Pro">Acunim Pro</option>
+                            <option value="Comic Sans">Comic Sans</option>
+                            <option disabled value="Times New Roman">Times New Roman</option>
+                        </select>
+                        <svg class="select-icon" focusable="false" width="32" height="32" viewBox="0 0 32 32" >
+                            <path d="M22.782 13.8L17 19.582 11.218 13.8a1 1 0 0 0-1.414 1.414L16.29 21.7a.992.992 0 0 0 .71.292.997.997 0 0 0 .71-.292l6.486-6.486a1 1 0 0 0-1.414-1.414z"/>
+                        </svg>
+                    </div>  
+                <!--------------->
+                    <p class="setting" style="display: inline-flex; margin-left: 150px;">Dark UI</p>
+                <!-- SWITCHER TOGGLE -->    
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <br><br><br>
+                    <!--------------->
+                    <div class="setting"style="display: inline-block;">Weight</div>
+                    <div class="setting" style="display: inline-block; margin-left: 305px;">Color</div>
+                    <br>
+                    <!-- WEIGHT CHECKBOXES -->
+                    <div style="display: inline-block;padding-top: 10px;">
+                        <input class="box1" type="checkbox" value="yes" id="regular">
+                        <label class="box2 setting" for="regular"></label>
+                        <p class="setting" style="display: inline-block; margin-left: 10px; margin-right: 5px;">Regular</p>
+                        <input class="box1" type="checkbox" value="yes" id="label">
+                        <label class="box2 setting" for="label"></label>
+                        <p class="setting" style="display: inline-block; margin-left: 10px;">Bold</p>
+                    </div>
+                    <!--------------------------------->
+                    <!-------- COLORS ------->
+                    <div class="color">
+                        <input id="blue" type="checkbox" checked><label for="blue" class="blue"></label>
+                        <input id="green" type="checkbox"><label for="green" class="green"></label>
+                        <input id="purple" type="checkbox"><label for="purple" class="purple"></label>
+                        <input id="yellow" type="checkbox" checked><label for="yellow" class="yellow"></label>
+                        <input id="orange" type="checkbox"><label for="orange" class="orange"></label>
+                    </div>
+                    <!--------------------------------->
+                    <br><br><br>
+                    <p class="setting">Size</p>
+                    <div class="slider-container">
+                        <br><br>
+                        <input type="range" class="range" id="slider" min="1" max="100" value="100" step="1">
+                        <div class="aslide">
+                            <label>A</label>
+                            <label class="bigger">A</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="images">
+                    <img src="assets/images/artistic-brush.png" alt="brush">
+                    <img src="assets/images/user-icon.png" alt="user">
+                    <img src="assets/images/sms-speech-bubble.png" alt="sms">
+                    <img src="assets/images/computer-screen.png" alt="computer">
+                </div>
+        </fieldset>
+</body>
+
+</html>

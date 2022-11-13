@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t03 Handbook">
+    <title>Handbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Handbook</h1>
+    <nav class="contents">
+        <div>
+            <ul class="nav">
+                <h2><a href="#html">HTML</a></h2>
+                <ul>
+                    <li>
+                        <a href="#q" class="nav-item nav-item-special">q</a>
+                        <a href="#li" class="nav-item">li</a>
+                        <a href="#span" class="nav-item">span</a>
+                        <a href="#textarea" class="nav-item">textarea</a>
+                        <a href="#strong" class="nav-item">strong</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav">
+                <h2><a href="#css">CSS</a></h2>
+                <ul>
+                    <li>
+                        <a href="#align" class="nav-item nav-item-special">align</a>
+                        <a href="#box-shadow" class="nav-item">box-shadow</a>
+                        <a href="#cursor" class="nav-item">cursor</a>
+                        <a href="#z-index" class="nav-item">z-index</a>
+                        <a href="#transform" class="nav-item">transform</a>
+                        <a href="#font-size" class="nav-item">font-size</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav">
+                <h2><a href="#protocols">PROTOCOLS</a></h2>
+                <ul>
+                    <li>
+                        <a href="#HTTP-methods" class="nav-item nav-item-special">HTTP methods</a>
+                        <a href="#status" class="nav-item">HTTP/HTTPS status code</a>
+                        <a href="#dns" class="nav-item">DNS</a>
+                        <a href="#ip" class="nav-item">Identifying google's IP</a>
+                    </li>
+                </ul>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <h2 class="topic-name" id="html">HTML</h2>    
+    <div class="html-css-topic">
+        <div class="html-css-item">
+            <h3 class="subtopic" id="q">q</h3> <br>
+            <p class="description">The &lt;q&gt; tag defines a short quotation.</p>
+            <br><br><br>
+            <p class="code">&lt;q&gt;Quote&lt;q&gt;</p>
+            <br><br>
+            <q>Quote</q>
+            <!-- <p><q>He is the best goalkeeper</q> - Bryan said</p> -->
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="li">li</h3> <br>
+            <p class="description">defines a list item.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">&lt;li&gt;Milk&lt;li&gt;</p>
+            <p class="code" style="display: inline-block;">&lt;li&gt;Bread&lt;li&gt;</p>
+            <br><br>
+            <li style="margin-top: 10px;">Milk</li>
+            <li>Bread</li>
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="span">span</h3> <br>
+            <p class="description">is an inline container used to mark up a part of a text.</p>
+            <br><br><br>
+            <p class="code">&lt;p&gt;My mother has &lt;span style="color: blue"&gt; eyes&lt;/span&gt;&lt;/p&gt;</p>
+            <br><br>
+            <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="textarea">textarea</h3> <br>
+            <p class="description">The &lt;textarea&gt; tag defines a multi-line text input control.</p>
+            <br><br><br>
+            <p class="code">&lt;textarea attributes&gt;&lt;/textarea&gt;</p>
+            <br><br>
+            <p style="margin-bottom: 5px; font-size: 15px;">Your biography</p> 
+            <textarea id="text" cols="16" rows="5"></textarea>
+
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="strong">strong</h3> <br>
+            <p class="description">is used to define text with strong importance.</p>
+            <br><br><br>
+            <p class="code">&lt;strong&gt;This text is important!&lt;strong&gt;</p>
+            <br><br>
+            <strong>This text is important!</strong>
+        </div>
+        
+    </div>
+    <h2 class="topic-name" id="css">CSS</h2>
+    <div class="html-css-topic">
+        <div class="html-css-item">
+            <h3 class="subtopic" id="align">align</h3> <br>
+            <p class="description">modifies the behavior of the flex-wrap property.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">text-align: center;</p>
+            <br><br>
+            <p style="text-align: center;">Center text</p>
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="box-shadow">box-shadow</h3> <br>
+            <p class="description">attaches one or more shadows to an element.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">box-shadow: 5px 10px;</p>
+            <br><br>
+            <p style="box-shadow: 1px 1px;">Shadow</p>
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="cursor">cursor</h3> <br>
+            <p class="description">specifies the mouse cursor to be displayed over an element.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">cursor: pointer;</p>
+            <br><br>
+            <p style="cursor: pointer;">Pointer</p>
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="z-index">z-index</h3> <br>
+            <p class="description">specifies the stack order of an element.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">z-index: 1;</p>
+            <br><br><br>
+            <p style="cursor: pointer;">This text overrides everything else</p>
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="transform">transform</h3> <br>
+            <p class="description">applies a 2D or 3D transformation to an element.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">transform: rotate(30deg);</p>
+            <br><br><br>
+            <p style="transform: rotate(5deg); margin-top: 15px;">Rotated text</p>
+        </div>
+        <div class="html-css-item">
+            <h3 class="subtopic" id="font-size">font-size</h3> <br>
+            <p class="description">specifies the font size of the item.</p>
+            <br><br><br>
+            <p class="code" style="display: inline-block;">font-size: 24px;</p>
+            <br><br>
+            <p style="font-size: 24px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ullam.</p>
+        </div>
+    </div>
+    <h2 class="topic-name" id="protocols">PROTOCOLS</h2>
+    <div class="protocols-topic">
+        <div class="protocols-item" id="HTTP-methods">
+            <p class="subtopic">HTTP methods</p>
+            <br><br>
+            <p style="color: rgba(0, 0, 0, 0.664);">
+                GET - used to request data from a specified resource.
+                <br><br><br>
+                POST - used to send data to a server to create/update a resource.
+                <br><br><br>
+                PUT - used to send data to a server to create/update a resource.
+                <br><br><br>
+                DELETE - deletes the specified resource.
+                <br><br><br>
+                OPTIONS - describes the communication options for the target resource.
+            </p>
+        </div>
+        <div class="protocols-item" id="status">
+            <p class="subtopic">HTTP/HTTPS status code</p>
+            <br><br>
+            <p style="color: rgba(0, 0, 0, 0.664);">
+                1xx: Informational <br> example: 100 Continue
+                <br><br>
+                2xx: Success <br> example: 201 Created
+                <br><br>
+                3xx: Redirection <br> example: 301 Moved Permanently
+                <br><br>
+                4xx: Client Error <br> example: 404 Not Found
+                <br><br>
+                5xx: Server Error <br> example: 500 Internal Server Error
+            </p>
+        </div>
+        <div class="protocols-item" id="dns">
+            <p class="subtopic">DNS</p>
+            <br><br>
+            <p style="color: rgba(0, 0, 0, 0.664);">
+                Address Mapping record (A Record)—also known as a DNS host record, stores a hostname and its corresponding IPv4 address.
+                <br><br>
+                IP Version 6 Address record (AAAA Record)—stores a hostname and its corresponding IPv6 address.
+                <br><br>
+                Canonical Name record (CNAME Record)—can be used to alias a hostname to another hostname. When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname.
+                <br><br>
+                Mail exchanger record (MX Record)—specifies an SMTP email server for the domain, used to route outgoing emails to an email server.
+                <br><br>
+                Name Server records (NS Record)—specifies that a DNS Zone, such as “example.com” is delegated to a specific Authoritative Name Server, and provides the address of the name server.
+                <br><br>
+                Reverse-lookup Pointer records (PTR Record)—allows a DNS resolver to provide an IP address and receive a hostname (reverse DNS lookup).
+                <br><br>
+                Certificate record (CERT Record)—stores encryption certificates—PKIX, SPKI, PGP, and so on.
+                <br><br>
+                Service Location (SRV Record)—a service location record, like MX but for other communication protocols.
+                <br><br>
+                Text Record (TXT Record)—typically carries machine-readable data such as opportunistic encryption, sender policy framework, DKIM, DMARC, etc.
+                <br><br>
+                Start of Authority (SOA Record)—this record appears at the beginning of a DNS zone file, and indicates the Authoritative Name Server for the current DNS zone, contact details for the domain administrator, domain serial number, and information on how frequently DNS information for this zone should be refreshed.
+                <br><br>
+            </p>
+        </div>
+        <div class="protocols-item" id="ip">
+            <p class="subtopic">Identifying google's IP</p>
+            <br><br>
+            <p style="color: rgba(0, 0, 0, 0.664);">
+                To identify google.com IP, follow the next steps:
+                <ol style="margin-top: 20px;">
+                    <li style="color: rgba(0, 0, 0, 0.664); margin-left: 17px;">open Terminal</li>
+                    <br>
+                    <li style="color: rgba(0, 0, 0, 0.664); margin-left: 17px;">paste and run the command nslookup google.com</li>
+                </ol>
+                <br><br>
+            <p style="color: rgba(0, 0, 0, 0.664);">
+                As result, you will receive "name" and "address".
+                <br><br>
+                Name: google.com.ua
+                <br><br>
+                Address: 216.58.215.99
+                <br><br>
+                Repeat steps 1 and 2 to identify google.com.ua IP
+            </p>
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

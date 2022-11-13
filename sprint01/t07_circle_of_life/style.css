@@ -1,0 +1,37 @@
+
+body {
+    background-color: rgb(28, 12, 36);
+    padding: 0;
+    margin: 0;
+}
+.circle {
+    margin-top: 69px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(43, 211, 43, 0.774);
+    position: relative;
+    left: 0;
+
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.circle:hover {
+    background-color: red;
+    transition: all ease 2s;
+}
+
+@keyframes movement {
+    0% {
+        left: 0;
+    }
+    100% {
+        margin-left: calc(100% - 205px);
+    }
+}
+

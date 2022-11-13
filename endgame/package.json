@@ -1,0 +1,19 @@
+{
+  "name": "black",
+  "version": "1.0.0",
+  "description": "Second individual project - blackjack player vs dealer game coded in vanilla JS (using casino, blackjack, and cards modules) & saving session status (AJAX). Had to learn Blackjack rules & go to Casino to observe game to code this :D <br> <br> Play at https://hanhaechi.github.io/blackjack/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.14"
+  }
+}

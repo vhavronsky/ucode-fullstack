@@ -1,0 +1,48 @@
+body{
+    position: relative;
+}
+
+.block {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    display: block;
+    cursor: pointer;
+    transform: rotate(0.2turn);
+}
+
+.block-1 {
+    left: 350px;
+    top: 120px;
+    background: #16c2f7;
+}
+.block-2 {
+    left: 250px;
+    top: 300px;
+    background: #49fd02;
+    }
+.block-3 {
+    left: 500px;
+    top: 300px;
+    background: #faf613;
+}
+.block-4 {
+    left: 600px;
+    top: 120px;
+    background: #ff3e24;
+}
+.block-5 {
+    left: 850px;
+    top: 120px;
+    background: #940a2c;
+}
+.block-6 {
+    left: 750px;
+    top: 300px;
+    background: #7766e7;
+}
+
+.on {
+    border: 3px dashed black;
+}
+

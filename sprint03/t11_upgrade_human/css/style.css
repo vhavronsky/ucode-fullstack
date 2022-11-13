@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.create:hover{
+    background-color: blueviolet;
+}
+.box{
+    width: 600px;
+    height: 900px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+button{
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgb(59, 140, 165);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(144, 255, 253);
+    color: black;
+}
+#h2{
+    border: 1px solid black;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(135, 222, 221);
+}
+#nom_nom_nom{
+    border: 1px solid black;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(130, 238, 252);
+    margin-top: 10px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

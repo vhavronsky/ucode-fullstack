@@ -1,0 +1,60 @@
+
+ body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: rgb(12, 13, 21);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.login-box {
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+  
+.login-box h2 {
+    margin: 0 0 60px 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(60, 45, 119);
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    padding: 0;
+    font-size: 16px;
+    color: rgb(80, 60, 156);
+    pointer-events: none;
+    transition: .5s;
+}
+
+button{
+    margin-top: 50px;
+    width: 170px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A new Set</title>
+    <style>
+      .grey {
+        width: 925px;
+        background-color: gray;
+        height: 200px;
+      }
+      .big-form {
+        width: 900px;
+        padding: 25px;
+      }
+      .about {
+        margin: 25px 0px;
+      }
+      button {
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset class="grey">
+      <div>POST</div>
+      <div></div>
+      <div class="info-form"></div>
+    </fieldset>
+    <form method="POST" id="form">
+      <fieldset class="big-form">
+        <fieldset class="fieldset">
+          <legend>About candidate</legend>
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              size="25"
+              name="name"
+              placeholder="Tell your name"
+              required
+              id="name"
+            />
+            <label for="mail">E-mail</label>
+            <input
+              type="email"
+              size="20"
+              name="mail"
+              placeholder="Tell your e-mail"
+              required
+              id="mail"
+            />
+            <label for="age">Age</label>
+            <input
+              type="number"
+              size="5"
+              name="age"
+              min="1"
+              max="125"
+              required
+              id="age"
+            />
+          </div>
+          <div class="about">
+            <label for="text">About</label>
+            <textarea
+              name="text"
+              cols="70"
+              rows="10"
+              placeholder="Tell about yourself, max 500 symbols"
+              maxlength="500"
+              required
+              id="area"
+            ></textarea>
+          </div>
+          <div>
+            <label>Your photo:</label>
+            <input type="file" name="photo" required id="photo" />
+          </div>
+        </fieldset>
+        <button id="clear" type="reset">clear</button>
+        <button id="send" type="submit">send</button>
+      </fieldset>
+    </form>
+    <script>
+      const subbtn = document.querySelector("#send");
+      const form = document.querySelector("#form");
+      function parses(e) {
+        e.preventDefault();
+        const block = document.querySelector(".info-form");
+        const url = "http://127.0.0.1:3000/";
+        const formdata = new FormData(form);
+        let data = {};
+        formdata.forEach((value, key) => {
+          if (value == "") {
+            alert(`${key} is empty`);
+            return console.error(`${key} is empty`);
+          } else {
+            if (key == "photo") {
+              data[key] = value.name;
+            } else {
+              data[key] = value;
+            }
+          }
+        });
+        function sendRequest(method, url, body = null) {
+          const headers = {
+            "Content-type": "applicaton/json",
+          };
+          return fetch(url, {
+            method: method,
+            body: JSON.stringify(body),
+            headers: headers,
+          }).then((res) => res.text());
+        }
+        sendRequest("POST", url, data)
+          .then(() => {
+            block.innerHTML = `
+            <br> &#123; <br> 
+            &#160;&#160;[name] => ${data.name} <br> 
+            &#160;&#160;[mail] => ${data.mail} <br> 
+            &#160;&#160;[age] =>${data.age} <br> 
+            &#160;&#160;[description] => ${data.text} <br> 
+            &#160;&#160;[phonto] => ${data.photo} <br> 
+            &#125; <br>
+            `;
+          })
+          .catch((e) => console.error(e));
+        form.reset();
+      }
+      subbtn.addEventListener("click", parses, false);
+    </script>
+  </body>
+</html>

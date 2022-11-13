@@ -1,0 +1,64 @@
+.player-cards , .dealer-cards {
+	display: inline-block;
+}
+
+.dealer-cards img {
+	width: 100px;
+}
+
+.player-cards img {
+	width: 130px;
+}
+
+img {
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+.dealer-count, .player-count {
+	margin-left: 1%;
+}
+
+.card {
+	max-width: 40%;
+	display: none;
+	padding: 12px;
+}
+
+#deal {
+	min-width: 22%;
+}
+
+
+/* media queries */
+
+@media (max-width: 575px) { 
+	.dealer-cards img {
+		max-width: 80px;
+	}
+
+	.player-cards img {
+		max-width: 90px;
+	}
+	.card {
+		max-width: 100%;
+	}
+	img {
+		padding-right: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+	.card {
+		max-width: 60%;
+	}
+}
+
+
+.logout {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}

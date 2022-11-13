@@ -1,0 +1,17 @@
+.grey{
+    width: 925px;
+    background-color: gray;
+    height: 200px;
+}
+.big-form{
+    width: 900px;
+    padding: 25px;
+}
+.about{
+    margin: 25px 0px;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

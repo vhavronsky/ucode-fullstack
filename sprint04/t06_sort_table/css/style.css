@@ -1,0 +1,33 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table, th, td {
+    border: 1px solid black;
+}
+table{
+    width: 400px;
+    height: 700px;
+    background-color: rgba(211, 211, 211, 0.397);
+}
+th{
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background-color: brown;
+}
+td{
+    width: 250px;
+    text-align: center;
+}
+#placeholder{
+    background-color: grey;
+    border-radius: 15px;
+    width: 220px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

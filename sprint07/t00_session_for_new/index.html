@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session</title>
+    <style>
+        .powers-box input,
+        .public-box input,
+        button{
+            cursor: pointer;
+        }
+        fieldset{
+          padding: 25px;
+        }
+        input{
+          margin: 10px
+        }
+    </style>
+  </head>
+  <body>
+     <h1>Session for new</h1>
+    <form  id="form" action="/login" method="POST">
+      <fieldset>
+        <fieldset>
+            <legend>About candidate</legend>
+          <div>
+            <label for="name">Real Name</label>
+            <input type="text" size="25" id="name" name="name" placeholder="Tell your Real Name" required/>
+            <label for="alias">Current Alias</label>
+            <input type="text" size="25" id="alias" name="alias" placeholder="Tell your Current Alias" required/>
+            <label for="age">Age</label>
+            <input type="number" size="5" id="age" name="age" min="1" max="125" required/>
+          </div>
+          <div class="about">
+            <label for="text">About</label>
+            <textarea name="text" id="text" cols="70" rows="10" placeholder="Tell about yourself, max 500 symbols" maxlength="500" required></textarea>
+          </div>
+          <div>
+              <label for="photo">Your photo:</label>
+              <input type="file" id="photo" name="photo" required>
+          </div>
+          <fieldset class="powers-box">
+            <legend>Powers</legend> 
+              <div>
+            <input type="checkbox" id="pw_strength" name="pw_strength">
+            <label for="pw_strength">Strength</label>
+            <input type="checkbox" id="pw_speed" name="pw_speed">
+            <label for="pw_speed">Speed</label>
+            <input type="checkbox" id="pw_intelligence" name="pw_intelligence">
+            <label for="pw_intelligence">Intelligence</label>
+            <input type="checkbox" id="pw_teleportation" name="pw_teleportation">
+            <label for="pw_teleportation">Teleportation</label>
+            <input type="checkbox" id="pw_immortal" name="pw_immortal">
+            <label for="pw_immortal">Immortal</label>
+            <input type="checkbox" id="pw_another" name="pw_another">
+            <label for="pw_another">Another</label>
+              </div>
+              <div>
+                <label for="volume">Level of control:</label>
+                <input type="range" id="volume" name="volume" step="1" value="0" min="0" max="10" required>
+              </div>
+          </fieldset>
+          <fieldset class="public-box">
+              <legend>Publicity</legend>
+              <input type="radio" id="pub_unknown" name="pub_unknown">
+              <label for="pub_unknown">Unknown</label>
+              <input type="radio" id="pub_ghost" name="pub_ghost">
+              <label for="pub_ghost">Ghost</label>
+              <input type="radio" id="pub_comics" name="pub_comics">
+              <label for="pub_comics">Comics</label>
+              <input type="radio" id="pub_club" name="pub_club">
+              <label for="pub_club">Club</label>
+              <input type="radio" id="pub_superstar" name="pub_superstar">
+              <label for="pub_superstar">Superstar</label>
+          </fieldset>
+        </fieldset>
+        <button id="reset" type="reset">clear</button>
+        <button id="submit" type="submit">send</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
